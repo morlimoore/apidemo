@@ -51,7 +51,7 @@ public class UserController {
         } catch(Exception e) {
            return createResponse(null, "User already exists", null, HttpStatus.BAD_REQUEST, null);
         }
-        return createResponse(null, "User added successfully", null, HttpStatus.OK, null);
+        return createResponse(null, "User added successfully", null, HttpStatus.CREATED, null);
     }
 
     @PutMapping("/update/{id}")
