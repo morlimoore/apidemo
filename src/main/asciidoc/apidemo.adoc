@@ -1,0 +1,37 @@
+= Java API demo with RestAssured and Spring REST Docs
+Victor Echendu
+:toc:
+
+== Get all users
+.request
+include::{snippets}/fetching-all-users/http-request.adoc[]
+.response
+include::{snippets}/fetching-all-users/http-response.adoc[]
+
+
+== Get a user
+.request
+include::{snippets}/fetching-a-user/http-request.adoc[]
+.response
+include::{snippets}/fetching-a-user/http-response.adoc[]
+
+
+== Add a user
+.request
+include::{snippets}/adding-a-user/http-request.adoc[]
+.response
+include::{snippets}/adding-a-user/http-response.adoc[]
+
+
+== Updating a user
+.request
+include::{snippets}/updating-a-user/http-request.adoc[]
+.response
+include::{snippets}/updating-a-user/http-response.adoc[]
+
+
+== Deleting a user
+.request
+include::{snippets}/deleting-a-user/http-request.adoc[]
+.response
+include::{snippets}/deleting-a-user/http-response.adoc[]
