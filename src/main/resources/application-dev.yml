@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url:
+    username:
+    password: 
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      format_sql: true
+    properties:
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+
