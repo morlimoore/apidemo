@@ -16,6 +16,9 @@
 
 	<properties>
 		<java.version>11</java.version>
+		<rest-assured.version>4.3.2</rest-assured.version>
+		<groovy.version>3.0.2</groovy.version>
+		<snippetsDirectory>${project.build.directory}/generated-snippets</snippetsDirectory>
 	</properties>
 
 	<dependencies>
