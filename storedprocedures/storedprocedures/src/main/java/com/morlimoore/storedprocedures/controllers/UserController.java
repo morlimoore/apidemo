@@ -22,16 +22,22 @@ public class UserController {
 
     @PostMapping("/save")
     public ResponseEntity<User> save(@RequestBody UserDto userDto) {
-        return userService.save(modelMapper.map(userDto, User.class));
+        User user = modelMapper.map(userDto, User.class);
+        return userService.save(user);
     }
 
-    @GetMapping("/get/{lastName}")
-    public ResponseEntity<User> getUserByEmail(@RequestParam("email") String email) {
-        return userService.getUserByEmail(email);
-    }
-
-    @GetMapping("/get")
+    @GetMapping("/get/all")
     public ResponseEntity<List<User>> getAll() {
-        return userService.findAll();
+        return userService.getAll();
     }
+
+//    @GetMapping("/get/{email}")
+//    public ResponseEntity<User> getUserByEmail(@RequestParam("email") String email) {
+//        return userService.getUserByEmail(email);
+//    }
+//
+//    @GetMapping("/get")
+//    public ResponseEntity<List<User>> getAll() {
+//        return userService.findAll();
+//    }
 }
