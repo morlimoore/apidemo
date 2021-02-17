@@ -13,9 +13,9 @@ CREATE PROCEDURE create_user
 AS
   SET NOCOUNT ON
 
-INSERT INTO users	(id, age, email,
+INSERT INTO users	(age, email,
                     first_name, last_name)
-VALUES              (@id, @age, @email,
+VALUES              (@age, @email,
                     @first_name, @last_name)
 
   SELECT @id = SCOPE_IDENTITY();
