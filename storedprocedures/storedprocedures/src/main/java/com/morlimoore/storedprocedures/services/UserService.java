@@ -8,6 +8,6 @@ import java.util.List;
 public interface UserService {
 
     ResponseEntity<User> save(User user);
-    ResponseEntity<User> getUserByEmail(String email);
-    ResponseEntity<List<User>> findAll();
+//    ResponseEntity<User> getUserByEmail(String email);
+    ResponseEntity<List<User>> getAll();
 }
